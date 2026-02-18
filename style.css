@@ -2,146 +2,162 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 16px;
-  scroll-behavior: smooth;
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
-  color: #1a1a1a;
-  background-color: #ffffff;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* ===== Container ===== */
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 48px 24px 64px;
+    width: 100%;
+    padding: 48px 60px 64px;
 }
 
 /* ===== Page Header ===== */
 .page-header {
-  margin-bottom: 40px;
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 24px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
 }
 
 .page-header .label {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #888;
-  margin-bottom: 4px;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 4px;
 }
 
 .page-header h1 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 4px;
-  line-height: 1.3;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+    line-height: 1.3;
 }
 
 .page-header .effective-date {
-  font-size: 0.875rem;
-  color: #666;
+    font-size: 0.875rem;
+    color: #666;
 }
 
 /* ===== Sections ===== */
 section {
-  margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 h2 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 12px;
-  line-height: 1.4;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+    line-height: 1.4;
 }
 
 h3 {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #333;
-  margin-top: 20px;
-  margin-bottom: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #222;
+    margin-top: 18px;
+    margin-bottom: 8px;
 }
 
 p {
-  font-size: 0.9rem;
-  color: #333;
-  margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* ===== Lists ===== */
 ul {
-  list-style: disc;
-  padding-left: 24px;
-  margin-bottom: 12px;
+    list-style: disc;
+    padding-left: 28px;
+    margin-bottom: 10px;
 }
 
 li {
-  font-size: 0.9rem;
-  color: #333;
-  margin-bottom: 4px;
-  line-height: 1.6;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 4px;
+    line-height: 1.6;
+}
+
+/* ===== Bold/strong text ===== */
+strong {
+    font-weight: 700;
+    color: #111;
 }
 
 /* ===== Links ===== */
 a {
-  color: #1a73e8;
-  text-decoration: none;
+    color: #1a73e8;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* ===== Footer ===== */
 .page-footer {
-  margin-top: 48px;
-  padding-top: 24px;
-  border-top: 1px solid #e5e5e5;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
 }
 
 .page-footer p {
-  font-size: 0.8rem;
-  color: #888;
-  margin-bottom: 4px;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 4px;
 }
 
 .page-footer a {
-  color: #888;
+    color: #888;
 }
 
 .page-footer a:hover {
-  color: #1a73e8;
+    color: #1a73e8;
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive – Tablet ===== */
+@media (max-width: 1024px) {
+    .container {
+        padding: 40px 40px 56px;
+    }
+}
+
+/* ===== Responsive – Mobile ===== */
 @media (max-width: 600px) {
-  .container {
-    padding: 32px 16px 48px;
-  }
+    .container {
+        padding: 28px 16px 40px;
+    }
 
-  .page-header h1 {
-    font-size: 1.4rem;
-  }
+    .page-header h1 {
+        font-size: 1.4rem;
+    }
 
-  h2 {
-    font-size: 1rem;
-  }
+    h2 {
+        font-size: 1rem;
+    }
+
+    p,
+    li {
+        font-size: 0.85rem;
+    }
 }
